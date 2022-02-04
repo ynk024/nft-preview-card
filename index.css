@@ -1,0 +1,123 @@
+:root {
+  --clr--soft-blue: hsl(215, 51%, 70%);
+  --clr--cyan: hsl(178, 100%, 50%);
+  --clr--very-dark-blue-main: hsl(217, 54%, 11%);
+  --clr--very-dark-blue-card: hsl(216, 50%, 16%);
+  --clr--very-dark-blue-line: hsl(215, 32%, 27%);
+  --clr--white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  =============
+    global styles
+    ============= */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background: var(--clr--very-dark-blue-main);
+  color: var(--clr--soft-blue);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  =============
+    typography
+    ============= */
+
+h1 {
+  font-weight: 500;
+  color: var(--clr--white);
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+/*  =============
+    layout
+    ============= */
+
+hr {
+  border: 0.5px solid var(--clr--very-dark-blue-line);
+}
+
+/*  =============
+    components
+    ============= */
+
+.card {
+  max-width: 350px;
+  background: var(--clr--very-dark-blue-card);
+  padding: 1.25em;
+  border-radius: 0.75em;
+}
+
+.card-img {
+  width: 100%;
+  margin: auto;
+  border-radius: 0.75em;
+}
+
+.nft-info {
+  padding: 1em 0 1.25em 0;
+  min-width: 25ch;
+}
+
+.nft-info > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.sales-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sales-info > * {
+  display: flex;
+  align-items: center;
+}
+
+.sales-info img {
+  margin-right: 0.25em;
+}
+
+.price > figcaption {
+  color: var(--clr--cyan);
+  font-weight: 600;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.creator img {
+  width: 2em;
+  border: 1px solid var(--clr--white);
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.creator .name {
+  color: var(--clr--white);
+}
